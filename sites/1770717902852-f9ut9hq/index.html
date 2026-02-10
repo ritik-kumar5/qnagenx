@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Q&A</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #10b981;
+            --secondary-color: #0ea5e9;
+            --background-color: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0;
+        }
+
+        .qa-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            padding: 25px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .qa-card h3 {
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+            cursor: pointer; /* Indicate it's clickable */
+        }
+
+        .answer-content {
+            font-size: 1.1em;
+            color: #334155;
+        }
+
+        .answer-content strong {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .answer-content em {
+            font-style: italic;
+            color: #475569;
+        }
+
+        .answer-content .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .read-more-container {
+            margin-top: 15px;
+            text-align: right;
+        }
+
+        .read-more-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #0da374;
+        }
+
+        .action-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .action-bar .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: #0da374;
+            transform: translateY(-2px);
+        }
+
+        .btn .material-icons {
+            font-size: 1.2em;
+        }
+
+        .share-btn-action:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .share-btn-action:hover .material-icons {
+            color: white;
+        }
+
+        .share-btn-action {
+            background-color: var(--secondary-color);
+        }
+        .share-btn-action:hover {
+            background-color: #0b85c9;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .qa-card {
+                padding: 20px;
+            }
+            .qa-card h3 {
+                font-size: 1.5em;
+            }
+            .answer-content {
+                font-size: 1em;
+            }
+            .action-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .action-bar .buttons {
+                width: 100%;
+                justify-content: center;
+                margin-top: 15px;
+            }
+            .btn {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Python Q&A</h1>
+    </header>
+
+    <main class="container">
+
+        <article class="qa-card">
+            <h3>What makes Python such a popular and versatile programming language, and why should a beginner consider learning it?</h3>
+            <div class="answer-content">
+                <p>Ah, Python! If programming languages were people, Python would be that incredibly friendly, smart, and approachable person who's good at almost everything. It's not just a language; it's an ecosystem, a philosophy, and a gateway into the vast universe of software development. Its meteoric rise in popularity isn't an accident; it’s a testament to its core design principles and the vibrant community that surrounds it.</p>
+
+                <p>At its heart, Python is renowned for its <strong>readable and elegant syntax</strong>. Imagine writing code that looks almost like plain English. That's Python. This simplicity significantly lowers the barrier to entry for newcomers. You don't need to wrestle with arcane symbols or complex declarations just to get a program running. This means beginners can focus on learning programming concepts rather than getting bogged down in the minutiae of the language itself. It’s like learning to drive a car that has automatic transmission and power steering – you can focus on the road and the journey.</p>
+
+                <p>But don't let its simplicity fool you; Python is an absolute powerhouse when it comes to versatility. Whether you're dreaming of building the next big web application, diving into the complex world of data science and machine learning, automating tedious tasks, developing games, or even venturing into scientific computing, Python has you covered. Its extensive standard library and a humongous collection of third-party packages (like NumPy, Pandas, TensorFlow, Django, Flask, and countless others) provide pre-built tools for almost any task imaginable. This means you're not reinventing the wheel; you're standing on the shoulders of giants, leveraging robust, well-tested solutions.</p>
+
+                <p>For a beginner, choosing Python is like choosing the most comfortable and scenic path on a hike. It allows for rapid prototyping, meaning you can quickly write and test your ideas, fostering a sense of accomplishment and encouraging further exploration. The <em>immediate feedback loop</em> you get from running Python scripts is incredibly rewarding. Furthermore, the sheer number of learning resources available – tutorials, courses, books, and an incredibly helpful online community – means you're never truly alone in your learning journey. If you get stuck, chances are someone has already asked your question and received a comprehensive answer on platforms like Stack Overflow.</p>
+
+                <p>Ultimately, Python's philosophy is about <strong>developer productivity and happiness</strong>. It's a language that respects your time and cognitive load, allowing you to express complex ideas with fewer lines of code. This not only makes coding faster but also makes it more enjoyable. For anyone looking to enter the world of programming, Python offers a gentle, yet powerful, introduction that opens doors to a wide array of exciting career paths and creative possibilities. It's a <span style="color: #10b981; font-weight: bold;">smart investment in your future</span>.</p>
+            </div>
+            <div class="read-more-container">
+                <button class="read-more-btn">
+                    <span class="material-icons">expand_more</span> Read More
+                </button>
+            </div>
+            <div class="action-bar">
+                <div class="buttons">
+                    <button class="btn">
+                        <span class="material-icons">thumb_up</span> Upvote
+                    </button>
+                    <button class="btn share-btn-action">
+                        <span class="material-icons">share</span> Share
+                    </button>
+                    <button class="btn">
+                        <span class="material-icons">content_copy</span> Copy Link
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.qa-card');
+                    const content = card.querySelector('.answer-content');
+                    const isExpanded = content.classList.toggle('expanded');
+
+                    if (isExpanded) {
+                        content.style.maxHeight = 'none'; // Unset max-height to show all content
+                        button.innerHTML = '<span class="material-icons">expand_less</span> Read Less';
+                    } else {
+                        content.style.maxHeight = '150px'; // Or a specific height you want to collapse to
+                        button.innerHTML = '<span class="material-icons">expand_more</span> Read More';
+                    }
+                });
+            });
+
+            // Initial setup for read more (collapse content initially)
+            const answerContents = document.querySelectorAll('.answer-content');
+            answerContents.forEach(content => {
+                const card = content.closest('.qa-card');
+                const readMoreButton = card.querySelector('.read-more-btn');
+                const lineHeight = parseFloat(getComputedStyle(content).lineHeight);
+                const maxHeight = 5 * lineHeight; // Assume 5 lines for initial collapse
+                content.style.maxHeight = `${maxHeight}px`;
+                content.style.overflow = 'hidden'; // Ensure it's hidden if taller than maxHeight
+                content.style.transition = 'max-height 0.3s ease-in-out'; // Smooth transition
+
+                // Hide button if content is already short
+                if (content.scrollHeight <= maxHeight) {
+                    readMoreButton.style.display = 'none';
+                }
+            });
+
+
+            const shareButtons = document.querySelectorAll('.share-btn-action');
+            shareButtons.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const card = button.closest('.qa-card');
+                    const urlToShare = window.location.href; // Share the current page URL
+                    const title = card.querySelector('h3').textContent;
+
+                    if (navigator.share) {
+                        try {
+                            await navigator.share({
+                                title: `Python Q&A: ${title}`,
+                                text: `Check out this answer about Python: ${title}`,
+                                url: urlToShare,
+                            });
+                            console.log('Shared successfully!');
+                        } catch (error) {
+                            console.error('Error sharing:', error);
+                            alert('Sharing failed. Please try again.');
+                        }
+                    } else {
+                        // Fallback for browsers that don't support Web Share API
+                        navigator.clipboard.writeText(urlToShare).then(() => {
+                            alert('Link copied to clipboard!');
+                        }).catch(err => {
+                            console.error('Failed to copy URL: ', err);
+                            alert('Failed to copy link. Please copy it manually.');
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
