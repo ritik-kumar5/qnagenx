@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Calling Agent aitota.com</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #64748b;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .qna-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .question-container h3 {
+            font-size: 1.8em;
+            margin: 0;
+            color: var(--text-color);
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .answer-container p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .answer-container .read-more-content {
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .answer-container .read-more-content.collapsed {
+            max-height: 200px; /* Adjust this value to control the initial truncated height */
+        }
+
+        .read-more-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #2563eb;
+        }
+
+        .action-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .action-bar .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .action-bar .btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .action-bar .btn .material-icons {
+            font-size: 1.2em;
+        }
+
+        .share-btn-action {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .share-btn-action:hover {
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Ai Calling Agent aitota.com</h1>
+    </header>
+
+    <div class="qna-card">
+        <div class="question-container">
+            <h3>What exactly is Aitota.com and how does its AI calling agent work to revolutionize customer service?</h3>
+        </div>
+        <div class="answer-container">
+            <p>
+                Imagine a world where your customer service never sleeps, never gets tired, and always remembers every detail of a customer's interaction. That's the promise of <strong style="color: var(--primary-color);">Aitota.com</strong>, an innovative platform leveraging cutting-edge <span class="highlight">Artificial Intelligence</span> to power its calling agents. At its core, Aitota.com aims to <span class="highlight">transform the way businesses engage with their customers</span> through intelligent, automated voice interactions. Instead of relying solely on human agents, which can be costly and time-consuming to scale, Aitota.com deploys AI-driven virtual agents capable of handling a wide spectrum of communication tasks.
+            </p>
+            <p>
+                The magic behind Aitota.com's AI calling agent lies in a sophisticated blend of technologies. Primarily, it utilizes advanced <span class="highlight">Natural Language Processing (NLP)</span> and <span class="highlight">Natural Language Understanding (NLU)</span>. This allows the AI to not only "hear" what a customer is saying but also to truly comprehend the intent, sentiment, and context behind their words. Think of it as moving beyond simple keyword recognition to genuine conversational understanding. This understanding then fuels the AI's ability to generate contextually appropriate and human-like responses, powered by <span class="highlight">Generative AI models</span>. The agents can perform tasks such as answering frequently asked questions, scheduling appointments, gathering feedback, processing simple transactions, and even providing personalized recommendations, all in a natural, conversational tone that can be customized to match a brand's voice.
+            </p>
+            <p>
+                What truly sets Aitota.com apart is its focus on <span class="highlight">seamless integration and scalability</span>. Businesses can deploy these AI agents across various channels – outbound campaigns for lead qualification or customer surveys, inbound support for handling high call volumes, or even proactive outreach to inform customers about updates or offers. The platform is designed to be intuitive, allowing for relatively easy setup and customization without requiring deep technical expertise. Furthermore, the AI agents learn and improve over time, analyzing each interaction to refine their responses and decision-making processes. This continuous learning loop ensures that the efficiency and effectiveness of the AI calling agent only grow stronger, leading to <span class="highlight">significant cost savings and enhanced customer satisfaction</span>. It's not just about automating calls; it's about creating more meaningful and productive customer relationships at scale.
+            </p>
+            <div class="read-more-content collapsed">
+                <p>
+                    The impact on customer service is profound. For businesses, this means <em>round-the-clock availability</em>, <em>reduced operational costs</em>, and the ability to <em>free up human agents for more complex, high-value interactions</em>. Customers benefit from <em>quicker response times</em>, <em>consistent service quality</em>, and personalized experiences that feel less like interacting with a machine and more like a helpful assistant. Aitota.com is essentially democratizing advanced AI capabilities, making sophisticated voice automation accessible to businesses of all sizes looking to stay competitive in an increasingly digital and customer-centric world. The potential applications are vast, from e-commerce and SaaS to healthcare and financial services, all aiming to streamline communication and elevate the overall customer journey.
+                </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="action-bar">
+            <button class="btn"><span class="material-icons">thumb_up</span> Upvote</button>
+            <button class="btn share-btn-action"><span class="material-icons">share</span> Share</button>
+            <button class="btn"><span class="material-icons">content_copy</span></button>
+        </div>
+    </div>
+
+    <div class="qna-card">
+        <div class="question-container">
+            <h3>How does Aitota.com's AI calling agent handle complex customer queries and ensure a positive user experience, beyond basic FAQs?</h3>
+        </div>
+        <div class="answer-container">
+            <p>
+                This is a fantastic question, and it cuts right to the heart of what makes advanced AI calling agents like those from <strong style="color: var(--primary-color);">Aitota.com</strong> so powerful. While handling FAQs is a foundational capability, the true revolution comes from the AI's ability to navigate <em>more nuanced and complex customer inquiries</em>. It's not just about having a vast database of answers; it's about understanding the *intent* and *context* of a query, even when it's not phrased perfectly or involves multiple layers of information. Aitota.com achieves this through a combination of sophisticated AI techniques that go far beyond simple pattern matching.
+            </p>
+            <p>
+                The key lies in the <span class="highlight">advanced Natural Language Understanding (NLU) models</span> that power Aitota.com's agents. These models are trained on massive datasets, enabling them to grasp subtle linguistic cues, disambiguate intent, and identify the core of a customer's problem. When a customer asks a complex question, the AI doesn't just look for keywords; it analyzes sentence structure, common conversational patterns, and even the emotional tone of the caller. For instance, if a customer is inquiring about a product return and mentions a specific order number, a defect, and a desire for an exchange, the AI can parse these distinct pieces of information. It can then access relevant customer data (like order history and product details) and initiate a multi-step process, such as verifying the order, checking return eligibility, and guiding the customer through the exchange process, all within a single, fluid conversation.
+            </p>
+            <p>
+                Ensuring a positive user experience, especially with complex queries, is paramount. Aitota.com employs several strategies to achieve this. Firstly, the AI is designed to <em>ask clarifying questions</em> when it detects ambiguity or insufficient information. This prevents frustration for the customer and ensures the AI is working with the correct understanding. For example, if a customer mentions a billing issue, the AI might ask, "Are you referring to your most recent invoice, or a previous one?" Secondly, the platform enables <em>dynamic conversation flows</em>. This means the AI can adapt its responses and actions based on the real-time input from the customer, rather than following a rigid, pre-scripted path. This adaptability is crucial for handling unexpected turns in a conversation or addressing issues that weren't initially anticipated.
+            </p>
+            <div class="read-more-content collapsed">
+                <p>
+                    Furthermore, Aitota.com integrates seamlessly with a company's existing CRM and knowledge base systems. This allows the AI agent to access <em>real-time, comprehensive information</em> tailored to the specific business and its customers. So, when a customer asks a question about a specific service plan or a unique product feature, the AI can retrieve precise details from the company's internal documentation. Crucially, for truly complex or sensitive issues that the AI cannot fully resolve, Aitota.com is programmed for <em>intelligent escalation</em>. The AI can smoothly transition the conversation to a human agent, providing them with a complete transcript and summary of the interaction so far. This ensures the customer doesn't have to repeat themselves, maintaining continuity and a high level of service. The goal is always to provide an efficient, accurate, and empathetic resolution, making the AI a powerful ally rather than a barrier in customer support. It's about <em>augmenting human capabilities</em>, not just replacing them, to create a superior customer journey.
+                </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="action-bar">
+            <button class="btn"><span class="material-icons">thumb_up</span> Upvote</button>
+            <button class="btn share-btn-action"><span class="material-icons">share</span> Share</button>
+            <button class="btn"><span class="material-icons">content_copy</span></button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.previousElementSibling; // The .read-more-content div
+                    if (content.classList.contains('collapsed')) {
+                        content.classList.remove('collapsed');
+                        this.textContent = 'Read Less';
+                    } else {
+                        content.classList.add('collapsed');
+                        this.textContent = 'Read More';
+                    }
+                });
+            });
+
+            const shareButtons = document.querySelectorAll('.share-btn-action');
+
+            shareButtons.forEach(button => {
+                button.addEventListener('click', async function() {
+                    const currentUrl = window.location.href;
+                    const card = this.closest('.qna-card');
+                    let shareText = "Check out this Q&A on Ai calling agent aitota.com:";
+
+                    if (card) {
+                        const question = card.querySelector('.question-container h3').textContent;
+                        const answerSnippet = card.querySelector('.answer-container p').textContent.substring(0, 100) + "...";
+                        shareText = `Q: ${question}\nA: ${answerSnippet}\n\n`;
+                    }
+
+                    if (navigator.share) {
+                        try {
+                            await navigator.share({
+                                title: 'Ai Calling Agent aitota.com',
+                                text: shareText,
+                                url: currentUrl
+                            });
+                            console.log('Shared successfully!');
+                        } catch (error) {
+                            console.error('Error sharing:', error);
+                        }
+                    } else {
+                        // Fallback for browsers that don't support Web Share API
+                        navigator.clipboard.writeText(currentUrl).then(() => {
+                            alert('Link copied to clipboard!');
+                        }).catch(err => {
+                            console.error('Failed to copy: ', err);
+                            alert('Failed to copy link. Please copy it manually.');
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Calling Agent aitota.com</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #64748b;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .qna-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .question-container h3 {
+            font-size: 1.8em;
+            margin: 0;
+            color: var(--text-color);
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .answer-container p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .answer-container .read-more-content {
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+
+        .answer-container .read-more-content.collapsed {
+            max-height: 200px; /* Adjust this value to control the initial truncated height */
+        }
+
+        .read-more-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #2563eb;
+        }
+
+        .action-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .action-bar .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: transparent;
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .action-bar .btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .action-bar .btn .material-icons {
+            font-size: 1.2em;
+        }
+
+        .share-btn-action {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .share-btn-action:hover {
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Ai Calling Agent aitota.com</h1>
+    </header>
+
+    <div class="qna-card">
+        <div class="question-container">
+            <h3>What exactly is Aitota.com and how does its AI calling agent work to revolutionize customer service?</h3>
+        </div>
+        <div class="answer-container">
+            <p>
+                Imagine a world where your customer service never sleeps, never gets tired, and always remembers every detail of a customer's interaction. That's the promise of <strong style="color: var(--primary-color);">Aitota.com</strong>, an innovative platform leveraging cutting-edge <span class="highlight">Artificial Intelligence</span> to power its calling agents. At its core, Aitota.com aims to <span class="highlight">transform the way businesses engage with their customers</span> through intelligent, automated voice interactions. Instead of relying solely on human agents, which can be costly and time-consuming to scale, Aitota.com deploys AI-driven virtual agents capable of handling a wide spectrum of communication tasks.
+            </p>
+            <p>
+                The magic behind Aitota.com's AI calling agent lies in a sophisticated blend of technologies. Primarily, it utilizes advanced <span class="highlight">Natural Language Processing (NLP)</span> and <span class="highlight">Natural Language Understanding (NLU)</span>. This allows the AI to not only "hear" what a customer is saying but also to truly comprehend the intent, sentiment, and context behind their words. Think of it as moving beyond simple keyword recognition to genuine conversational understanding. This understanding then fuels the AI's ability to generate contextually appropriate and human-like responses, powered by <span class="highlight">Generative AI models</span>. The agents can perform tasks such as answering frequently asked questions, scheduling appointments, gathering feedback, processing simple transactions, and even providing personalized recommendations, all in a natural, conversational tone that can be customized to match a brand's voice.
+            </p>
+            <p>
+                What truly sets Aitota.com apart is its focus on <span class="highlight">seamless integration and scalability</span>. Businesses can deploy these AI agents across various channels – outbound campaigns for lead qualification or customer surveys, inbound support for handling high call volumes, or even proactive outreach to inform customers about updates or offers. The platform is designed to be intuitive, allowing for relatively easy setup and customization without requiring deep technical expertise. Furthermore, the AI agents learn and improve over time, analyzing each interaction to refine their responses and decision-making processes. This continuous learning loop ensures that the efficiency and effectiveness of the AI calling agent only grow stronger, leading to <span class="highlight">significant cost savings and enhanced customer satisfaction</span>. It's not just about automating calls; it's about creating more meaningful and productive customer relationships at scale.
+            </p>
+            <div class="read-more-content collapsed">
+                <p>
+                    The impact on customer service is profound. For businesses, this means <em>round-the-clock availability</em>, <em>reduced operational costs</em>, and the ability to <em>free up human agents for more complex, high-value interactions</em>. Customers benefit from <em>quicker response times</em>, <em>consistent service quality</em>, and personalized experiences that feel less like interacting with a machine and more like a helpful assistant. Aitota.com is essentially democratizing advanced AI capabilities, making sophisticated voice automation accessible to businesses of all sizes looking to stay competitive in an increasingly digital and customer-centric world. The potential applications are vast, from e-commerce and SaaS to healthcare and financial services, all aiming to streamline communication and elevate the overall customer journey.
+                </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="action-bar">
+            <button class="btn"><span class="material-icons">thumb_up</span> Upvote</button>
+            <button class="btn share-btn-action"><span class="material-icons">share</span> Share</button>
+            <button class="btn"><span class="material-icons">content_copy</span></button>
+        </div>
+    </div>
+
+    <div class="qna-card">
+        <div class="question-container">
+            <h3>How does Aitota.com's AI calling agent handle complex customer queries and ensure a positive user experience, beyond basic FAQs?</h3>
+        </div>
+        <div class="answer-container">
+            <p>
+                This is a fantastic question, and it cuts right to the heart of what makes advanced AI calling agents like those from <strong style="color: var(--primary-color);">Aitota.com</strong> so powerful. While handling FAQs is a foundational capability, the true revolution comes from the AI's ability to navigate <em>more nuanced and complex customer inquiries</em>. It's not just about having a vast database of answers; it's about understanding the *intent* and *context* of a query, even when it's not phrased perfectly or involves multiple layers of information. Aitota.com achieves this through a combination of sophisticated AI techniques that go far beyond simple pattern matching.
+            </p>
+            <p>
+                The key lies in the <span class="highlight">advanced Natural Language Understanding (NLU) models</span> that power Aitota.com's agents. These models are trained on massive datasets, enabling them to grasp subtle linguistic cues, disambiguate intent, and identify the core of a customer's problem. When a customer asks a complex question, the AI doesn't just look for keywords; it analyzes sentence structure, common conversational patterns, and even the emotional tone of the caller. For instance, if a customer is inquiring about a product return and mentions a specific order number, a defect, and a desire for an exchange, the AI can parse these distinct pieces of information. It can then access relevant customer data (like order history and product details) and initiate a multi-step process, such as verifying the order, checking return eligibility, and guiding the customer through the exchange process, all within a single, fluid conversation.
+            </p>
+            <p>
+                Ensuring a positive user experience, especially with complex queries, is paramount. Aitota.com employs several strategies to achieve this. Firstly, the AI is designed to <em>ask clarifying questions</em> when it detects ambiguity or insufficient information. This prevents frustration for the customer and ensures the AI is working with the correct understanding. For example, if a customer mentions a billing issue, the AI might ask, "Are you referring to your most recent invoice, or a previous one?" Secondly, the platform enables <em>dynamic conversation flows</em>. This means the AI can adapt its responses and actions based on the real-time input from the customer, rather than following a rigid, pre-scripted path. This adaptability is crucial for handling unexpected turns in a conversation or addressing issues that weren't initially anticipated.
+            </p>
+            <div class="read-more-content collapsed">
+                <p>
+                    Furthermore, Aitota.com integrates seamlessly with a company's existing CRM and knowledge base systems. This allows the AI agent to access <em>real-time, comprehensive information</em> tailored to the specific business and its customers. So, when a customer asks a question about a specific service plan or a unique product feature, the AI can retrieve precise details from the company's internal documentation. Crucially, for truly complex or sensitive issues that the AI cannot fully resolve, Aitota.com is programmed for <em>intelligent escalation</em>. The AI can smoothly transition the conversation to a human agent, providing them with a complete transcript and summary of the interaction so far. This ensures the customer doesn't have to repeat themselves, maintaining continuity and a high level of service. The goal is always to provide an efficient, accurate, and empathetic resolution, making the AI a powerful ally rather than a barrier in customer support. It's about <em>augmenting human capabilities</em>, not just replacing them, to create a superior customer journey.
+                </p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+        </div>
+        <div class="action-bar">
+            <button class="btn"><span class="material-icons">thumb_up</span> Upvote</button>
+            <button class="btn share-btn-action"><span class="material-icons">share</span> Share</button>
+            <button class="btn"><span class="material-icons">content_copy</span></button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.previousElementSibling; // The .read-more-content div
+                    if (content.classList.contains('collapsed')) {
+                        content.classList.remove('collapsed');
+                        this.textContent = 'Read Less';
+                    } else {
+                        content.classList.add('collapsed');
+                        this.textContent = 'Read More';
+                    }
+                });
+            });
+
+            const shareButtons = document.querySelectorAll('.share-btn-action');
+
+            shareButtons.forEach(button => {
+                button.addEventListener('click', async function() {
+                    const currentUrl = window.location.href;
+                    const card = this.closest('.qna-card');
+                    let shareText = "Check out this Q&A on Ai calling agent aitota.com:";
+
+                    if (card) {
+                        const question = card.querySelector('.question-container h3').textContent;
+                        const answerSnippet = card.querySelector('.answer-container p').textContent.substring(0, 100) + "...";
+                        shareText = `Q: ${question}\nA: ${answerSnippet}\n\n`;
+                    }
+
+                    if (navigator.share) {
+                        try {
+                            await navigator.share({
+                                title: 'Ai Calling Agent aitota.com',
+                                text: shareText,
+                                url: currentUrl
+                            });
+                            console.log('Shared successfully!');
+                        } catch (error) {
+                            console.error('Error sharing:', error);
+                        }
+                    } else {
+                        // Fallback for browsers that don't support Web Share API
+                        navigator.clipboard.writeText(currentUrl).then(() => {
+                            alert('Link copied to clipboard!');
+                        }).catch(err => {
+                            console.error('Failed to copy: ', err);
+                            alert('Failed to copy link. Please copy it manually.');
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
